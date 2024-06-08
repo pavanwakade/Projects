@@ -1,0 +1,164 @@
+
+*{
+  margin:0;
+  font-family: Arial;
+  border: border-box;
+  font-family: Arial;
+}
+body {
+  background-color: #07827b;
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  color: aliceblue;
+  background-color:   rgb(43, 177, 133);
+  
+}
+
+.logo img{
+  
+  height: 60px;
+  width: 200px;
+  background-size: cover;
+  margin-right: 100vh;
+ 
+ }
+
+ul {
+  list-style: none;
+  gap: 25px;
+  font-size: 20px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s;
+  font-size: 18px;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  display: inline-block;
+  height: 1rem;
+  background: white;
+  transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.nav__link:hover {
+  color: rgb(252, 0, 42);
+}
+
+.nav__link:hover::after {
+  right: 0;
+  height: 2px;
+  background: rgb(252, 0, 42);
+}
+.hero{
+  background-image: url(banar.png);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  margin-top: 10px;
+
+}
+
+
+.H-container {
+  display: flex;
+  justify-content: space-evenly;
+padding: 5px;
+
+}
+
+.flex-box {
+
+  /* border: 2px solid rgb(255, 0, 0); */
+  width: 33.33%;
+  height: 300px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  background-color: white;
+
+}
+.flex-box img{
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 70%;
+  margin-left: 18px; 
+}
+p {
+  text-align: center;
+  font: bold;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+a {
+  /* background-color: rgb(0, 38, 255); */
+  color: rgb(17, 0, 255);
+  /* border-radius: 25px; */
+  width: 100px;
+
+}
+
+a:hover {
+  /* background-color: rgb(255, 0, 0); */
+  color: rgba(255, 0, 0, 0.966);
+}
+
+.back {
+  background-color: #037771ce;
+  height: 40px;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.back_link {
+  text-decoration: none;
+  color: white;
+
+}
+
+.foot {
+  background-color: rgb(43, 177, 133);
+  border-top: 0.5px solid rgba(236, 235, 235, 0.833);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.copy {
+  background-color:rgb(43, 177, 133);
+  height: 40px;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
