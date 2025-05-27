@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .footer {
+      background: linear-gradient(90deg, #edebeb, #dbd8d8);
+      color: #000;
+      padding: 40px 0;
+      margin-top: 20px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer h5 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #ff00d9;
+    }
+
+    .footer p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #000;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #ff00d9;
+      text-decoration: underline;
+    }
+
+    /* Active class for current page in footer */
+    .footer-links a.active {
+      color: #d400b8 !important;
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+      text-decoration-color: rgb(0, 200, 255);
+      text-underline-offset: 8px;
+    }
+
+    .newsletter-form input {
+      border: 0;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .newsletter-form button {
+      border-radius: 0 4px 4px 0;
+    }
+
+    .social-icons a {
+      color: #000;
+      font-size: 20px;
+      margin-right: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ff00d9;
+    }
+  </style>
+</head>
+<body>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>Discover delicious recipes from around the world with our curated collection.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="foods.html">foods</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Stay Connected</h5>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+          </form>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>© 2025 Recipe Website. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

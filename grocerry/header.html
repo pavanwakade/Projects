@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .navbar {
+      background: linear-gradient(90deg, #edebeb, #dbd8d8);
+      animation: fadeDown 0.6s ease-in-out;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      color: rgb(0, 0, 0);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 24px;
+      color: #01e1ff !important;
+      animation: slideInLeft 0.8s ease;
+    }
+
+    .navbar-nav .nav-link {
+      margin: 0 15px;
+      position: relative;
+      transition: color 0.3s ease;
+      animation: fadeInUp 0.7s ease forwards;
+      opacity: 0;
+    }
+
+    .navbar-nav .nav-item:nth-child(1) .nav-link { animation-delay: 0.3s; }
+    .navbar-nav .nav-item:nth-child(2) .nav-link { animation-delay: 0.5s; }
+    .navbar-nav .nav-item:nth-child(3) .nav-link { animation-delay: 0.7s; }
+    .navbar-nav .nav-item:nth-child(4) .nav-link { animation-delay: 0.9s; }
+
+    .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #ff00d9;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #d400b8 !important;
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+      text-decoration-color: rgb(0, 200, 255);
+      text-underline-offset: 8px;
+    }
+
+    /* Active class for current page */
+    .navbar-nav .nav-link.active {
+      color: #d400b8 !important;
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+      text-decoration-color: rgb(0, 200, 255);
+      text-underline-offset: 8px;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-100px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .navbar-collapse {
+      transition: max-height 0.4s ease-in-out;
+      overflow: hidden;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="/images/ood/logo4.png" height="60px" style="padding: 0px !important;" alt="🍕FoodHub"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="foods.html">foods</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <form class="d-flex" role="search" id="searchForm">
+              <input class="form-control me-2 custom-search" type="search" placeholder="Search Recipes" aria-label="Search" style="border: 0px;"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
